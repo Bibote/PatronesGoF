@@ -3,7 +3,7 @@ package domain;
 import symptoms.*;
 
 public class SymptomFactory {
-	private Symptom createSymptom(String symptomName) {
+	public Symptom createSymptom(String symptomName) {
 	if(symptomName.equals("astenia")) return new AsteniaSymptom();
 	if(symptomName.equals("cefalea")) return new CefaleaSymptom();
 	if(symptomName.equals("congestion conjuntival")) return new CongestionConjuntivalSymptom();
